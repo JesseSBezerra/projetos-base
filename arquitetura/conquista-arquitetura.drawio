@@ -1,59 +1,46 @@
-<mxfile host="app.diagrams.net" agent="Claude Code" version="24.0.0">
-
-  <!-- ======================================================================
-       PÁGINA 1 — VISÃO GERAL
-  ======================================================================= -->
+<mxfile host="Electron" agent="Claude Code" pages="4">
   <diagram name="Visão Geral" id="pagina-visao-geral">
     <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-
         <mxCell id="ov-title" value="Conquista — Visão Geral" style="text;html=1;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="20" y="10" width="500" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ov-subtitle" value="4 páginas neste arquivo: Visão Geral · Salesforce · Microfrontend (home-c2) · BFF (backend + API Gateway)" style="text;html=1;fontSize=11;fontStyle=2;align=left;verticalAlign=middle;fontColor=#666666;" vertex="1" parent="1">
           <mxGeometry x="20" y="40" width="700" height="20" as="geometry" />
         </mxCell>
-
-        <mxCell id="ov-sf" value="Salesforce&#10;Lightning Experience + LWC homeC2Embed&#10;(ver página &quot;Salesforce&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="ov-sf" value="Salesforce&#xa;Lightning Experience + LWC homeC2Embed&#xa;(ver página &quot;Salesforce&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="60" y="90" width="260" height="70" as="geometry" />
         </mxCell>
-
-        <mxCell id="ov-home" value="Microfrontend home-c2&#10;Angular 18, dentro do iframe&#10;(ver página &quot;Microfrontend&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="ov-home" value="Microfrontend home-c2&#xa;Angular 18, dentro do iframe&#xa;(ver página &quot;Microfrontend&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="60" y="220" width="260" height="70" as="geometry" />
         </mxCell>
-
-        <mxCell id="ov-gw" value="AWS API Gateway&#10;preparacao-conquista-bff-contract&#10;(ver página &quot;BFF&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="ov-gw" value="AWS API Gateway&#xa;preparacao-conquista-bff-contract&#xa;(ver página &quot;BFF&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="60" y="350" width="260" height="70" as="geometry" />
         </mxCell>
-
-        <mxCell id="ov-eks" value="Backend em EKS&#10;preparacao-conquista-bff (Spring Boot)&#10;(ver página &quot;BFF&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="ov-eks" value="Backend em EKS&#xa;preparacao-conquista-bff (Spring Boot)&#xa;(ver página &quot;BFF&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="60" y="480" width="260" height="70" as="geometry" />
         </mxCell>
-
-        <mxCell id="ov-data" value="Salesforce — Dados / REST API&#10;Visita__c, Event__c, PerfilTabulacao__c...&#10;(ver página &quot;Salesforce&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="ov-data" value="Salesforce — Dados / REST API&#xa;Visita__c, Event__c, PerfilTabulacao__c...&#xa;(ver página &quot;Salesforce&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="60" y="610" width="260" height="70" as="geometry" />
         </mxCell>
-
         <mxCell id="ov-secrets" value="AWS Secrets Manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="420" y="410" width="220" height="50" as="geometry" />
         </mxCell>
-
-        <mxCell id="ov-pb" value="projetos-base&#10;(compactador — snapshots .db + este diagrama)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#455A64;fontSize=11;" vertex="1" parent="1">
+        <mxCell id="ov-pb" value="projetos-base&#xa;(compactador — snapshots .db + este diagrama)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#455A64;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="420" y="610" width="240" height="60" as="geometry" />
         </mxCell>
-
         <mxCell id="ov-e1" value="1. postMessage(CONQUISTA_TOKEN)" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;strokeColor=#2E7D32;" edge="1" parent="1" source="ov-sf" target="ov-home">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ov-e2" value="2. Authorization: Bearer JWT&#10;(cadeia de auth #1 — Gateway)" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;strokeColor=#EF6C00;" edge="1" parent="1" source="ov-home" target="ov-gw">
+        <mxCell id="ov-e2" value="2. Authorization: Bearer JWT&#xa;(cadeia de auth #1 — Gateway)" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;strokeColor=#EF6C00;" edge="1" parent="1" source="ov-home" target="ov-gw">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ov-e3" value="3. VPC Link / NLB (http_proxy)" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;strokeColor=#6A1B9A;" edge="1" parent="1" source="ov-gw" target="ov-eks">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ov-e4" value="4. Bearer TV2-STS&#10;(cadeia de auth #2 — independente)" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;strokeColor=#1565C0;" edge="1" parent="1" source="ov-eks" target="ov-data">
+        <mxCell id="ov-e4" value="4. Bearer TV2-STS&#xa;(cadeia de auth #2 — independente)" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;strokeColor=#1565C0;" edge="1" parent="1" source="ov-eks" target="ov-data">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ov-e5" value="secrets" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;dashed=1;strokeColor=#C62828;" edge="1" parent="1" source="ov-gw" target="ov-secrets">
@@ -62,215 +49,196 @@
         <mxCell id="ov-e6" value="secrets" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;dashed=1;strokeColor=#C62828;" edge="1" parent="1" source="ov-eks" target="ov-secrets">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-
-        <mxCell id="ov-legend" value="Duas cadeias de autenticação totalmente independentes:&#10;#1 Consumidor (home-c2) → Gateway: OAuth2 client_credentials, JWT HS256, validado pelo Lambda Authorizer.&#10;#2 Backend (preparacao-conquista-bff) → Salesforce: handshake TV2-STS, nunca chega ao consumidor." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#F9A825;fontSize=11;align=left;spacingLeft=8;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+        <mxCell id="ov-legend" value="Duas cadeias de autenticação totalmente independentes:&#xa;#1 Consumidor (home-c2) → Gateway: OAuth2 client_credentials, JWT HS256, validado pelo Lambda Authorizer.&#xa;#2 Backend (preparacao-conquista-bff) → Salesforce: handshake TV2-STS, nunca chega ao consumidor." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#F9A825;fontSize=11;align=left;spacingLeft=8;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
           <mxGeometry x="60" y="720" width="600" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-
-  <!-- ======================================================================
-       PÁGINA 2 — SALESFORCE
-  ======================================================================= -->
   <diagram name="Salesforce" id="pagina-salesforce">
-    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="900" math="0" shadow="0">
+    <mxGraphModel dx="1653" dy="849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-
-        <mxCell id="sf-title" value="Salesforce — LWC, Apex e Dados" style="text;html=1;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="20" y="10" width="600" height="30" as="geometry" />
+        <mxCell id="sf-title" parent="1" style="text;html=1;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;" value="Salesforce — LWC, Apex e Dados" vertex="1">
+          <mxGeometry height="30" width="600" x="20" y="10" as="geometry" />
         </mxCell>
-        <mxCell id="sf-subtitle" value="Repositório organizacao — projeto sfdx. Ver conquista-auth-lwc.db em projetos-base para o recorte só destas peças." style="text;html=1;fontSize=11;fontStyle=2;align=left;verticalAlign=middle;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="20" y="40" width="700" height="20" as="geometry" />
+        <mxCell id="sf-subtitle" parent="1" style="text;html=1;fontSize=11;fontStyle=2;align=left;verticalAlign=middle;fontColor=#666666;" value="Repositório organizacao — projeto sfdx. Ver conquista-auth-lwc.db em projetos-base para o recorte só destas peças." vertex="1">
+          <mxGeometry height="20" width="700" x="20" y="40" as="geometry" />
         </mxCell>
-
-        <mxCell id="sf-col-apex" value="LWC + Apex (autenticação)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1565C0;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#1565C0;align=center;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="20" y="80" width="320" height="600" as="geometry" />
+        <mxCell id="sf-col-apex" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1565C0;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#1565C0;align=center;spacingTop=8;" value="LWC + Apex (autenticação)" vertex="1">
+          <mxGeometry height="670" width="320" x="20" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="sf-lwc" value="LWC homeC2Embed&#10;hospeda o iframe do home-c2&#10;handleMessage: HOME_C2_READY / REQUEST_TOKEN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="50" y="120" width="260" height="65" as="geometry" />
+        <mxCell id="sf-lwc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" value="LWC homeC2Embed&#xa;hospeda o iframe do home-c2&#xa;handleMessage: HOME_C2_READY / REQUEST_TOKEN" vertex="1">
+          <mxGeometry height="65" width="260" x="50" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="sf-controller" value="Apex: TV2_PB_ConquistaController&#10;obterToken() — usado pelo LWC&#10;autenticar() — diagnóstico" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="50" y="200" width="260" height="60" as="geometry" />
+        <mxCell id="sf-controller" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" value="Apex: TV2_PB_ConquistaController&#xa;obterToken() — usado pelo LWC&#xa;autenticar() — diagnóstico" vertex="1">
+          <mxGeometry height="60" width="260" x="50" y="200" as="geometry" />
         </mxCell>
-        <mxCell id="sf-service" value="Apex: TV2_PB_ConquistaService&#10;getBearerToken() — cache por transação&#10;POST /oauth/token (client_credentials)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="50" y="275" width="260" height="60" as="geometry" />
+        <mxCell id="sf-service" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" value="Apex: TV2_PB_ConquistaService&#xa;getBearerToken() — cache por transação&#xa;POST /oauth/token (client_credentials)" vertex="1">
+          <mxGeometry height="60" width="260" x="50" y="275" as="geometry" />
         </mxCell>
-        <mxCell id="sf-restresource" value="Apex: TV2_PB_ConquistaRestResource&#10;/services/apexrest/conquista/token&#10;(endpoint REST de diagnóstico manual)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="50" y="350" width="260" height="55" as="geometry" />
+        <mxCell id="sf-restresource" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" value="Apex: TV2_PB_ConquistaRestResource&#xa;/services/apexrest/conquista/token&#xa;(endpoint REST de diagnóstico manual)" vertex="1">
+          <mxGeometry height="55" width="260" x="50" y="350" as="geometry" />
         </mxCell>
-        <mxCell id="sf-tests" value="Testes: *Test.cls (HttpCalloutMock)&#10;um por classe acima" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;fontSize=10;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="415" width="260" height="40" as="geometry" />
+        <mxCell id="sf-tests" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;fontSize=10;dashed=1;" value="Testes: *Test.cls (HttpCalloutMock)&#xa;um por classe acima" vertex="1">
+          <mxGeometry height="40" width="260" x="50" y="415" as="geometry" />
         </mxCell>
-        <mxCell id="sf-nc" value="Named Credential&#10;Conquista_Gateway_API (protocolo NoAuthentication —&#10;auth manual no Apex)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="50" y="470" width="260" height="55" as="geometry" />
+        <mxCell id="sf-nc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" value="Named Credential&#xa;Conquista_Gateway_API (protocolo NoAuthentication —&#xa;auth manual no Apex)" vertex="1">
+          <mxGeometry height="55" width="260" x="50" y="470" as="geometry" />
         </mxCell>
-        <mxCell id="sf-cmdt" value="Custom Metadata&#10;Conquista_Gateway_Setting__mdt&#10;(Client_Id__c / Client_Secret__c)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="50" y="540" width="260" height="55" as="geometry" />
+        <mxCell id="sf-cmdt" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" value="Custom Metadata&#xa;Conquista_Gateway_Setting__mdt&#xa;(Client_Id__c / Client_Secret__c)" vertex="1">
+          <mxGeometry height="55" width="260" x="50" y="540" as="geometry" />
         </mxCell>
-        <mxCell id="sf-permset" value="Permission Set&#10;TV2_PB_Conquista_Acesso&#10;(Apex Class Access — sem isso, LWC falha silencioso)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="50" y="610" width="260" height="55" as="geometry" />
+        <mxCell id="sf-permset" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" value="Permission Set&#xa;TV2_PB_Conquista_Acesso&#xa;(Apex Class Access — sem isso, LWC falha silencioso)" vertex="1">
+          <mxGeometry height="55" width="260" x="50" y="610" as="geometry" />
         </mxCell>
-        <mxCell id="sf-csp" value="CSP Trusted Site&#10;Home_C2_AWS_Frontend&#10;(libera o domínio CloudFront pro iframe)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="50" y="675" width="260" height="55" as="geometry" />
+        <mxCell id="sf-csp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;" value="CSP Trusted Site&#xa;Home_C2_AWS_Frontend&#xa;(libera o domínio CloudFront pro iframe)" vertex="1">
+          <mxGeometry height="55" width="260" x="50" y="675" as="geometry" />
         </mxCell>
-
-        <mxCell id="sf-col-dados" value="Dados (objetos consultados/gravados)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1565C0;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#1565C0;align=center;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="380" y="80" width="340" height="600" as="geometry" />
+        <mxCell id="sf-col-dados" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1565C0;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#1565C0;align=center;spacingTop=8;" value="Dados (objetos consultados/gravados)" vertex="1">
+          <mxGeometry height="650" width="340" x="380" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="sf-visita" value="Visita__c&#10;Objeto EMPACOTADO de terceiros (~150 campos, app de&#10;força de vendas) — só um subconjunto é usado aqui:&#10;OwnerId, Conta__c/Lead__c, CNPJ_ESTABELECIMENTO__c,&#10;TipoContato__c/StatusContato__c/StatusDetalhado__c,&#10;Observacoes__c, RealizadoPor__c, EventId__c" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="410" y="120" width="280" height="130" as="geometry" />
+        <mxCell id="sf-visita" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=8;" value="Visita__c&#xa;Objeto EMPACOTADO de terceiros (~150 campos, app de&#xa;força de vendas) — só um subconjunto é usado aqui:&#xa;OwnerId, Conta__c/Lead__c, CNPJ_ESTABELECIMENTO__c,&#xa;TipoContato__c/StatusContato__c/StatusDetalhado__c,&#xa;Observacoes__c, RealizadoPor__c, EventId__c" vertex="1">
+          <mxGeometry height="130" width="280" x="410" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="sf-event" value="Event__c&#10;Objeto CUSTOM PRÓPRIO (só 4 campos):&#10;StartDateTime__c, EndDateTime__c,&#10;Subtipo__c (&quot;Retornar Visita/Ligação/WhatsApp&quot;),&#10;TipoDoContato__c" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="410" y="265" width="280" height="100" as="geometry" />
+        <mxCell id="sf-event" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=8;" value="Event__c&#xa;Objeto CUSTOM PRÓPRIO (só 4 campos):&#xa;StartDateTime__c, EndDateTime__c,&#xa;Subtipo__c (&quot;Retornar Visita/Ligação/WhatsApp&quot;),&#xa;TipoDoContato__c" vertex="1">
+          <mxGeometry height="100" width="280" x="410" y="265" as="geometry" />
         </mxCell>
-        <mxCell id="sf-relacao" value="Visita__c.EventId__c → Event__c&#10;(data/hora/tipo do retorno ficam no Event, não na Visita —&#10;convenção herdada, não um bug novo)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#F9A825;fontSize=10;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="410" y="380" width="280" height="55" as="geometry" />
+        <mxCell id="sf-relacao" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#F9A825;fontSize=10;dashed=1;" value="Visita__c.EventId__c → Event__c&#xa;(data/hora/tipo do retorno ficam no Event, não na Visita —&#xa;convenção herdada, não um bug novo)" vertex="1">
+          <mxGeometry height="55" width="280" x="410" y="380" as="geometry" />
         </mxCell>
-        <mxCell id="sf-perfiltab" value="PerfilTabulacao__c&#10;Árvore de decisão do Pipeline (dado externalizado,&#10;não hardcoded): TipoContato__c × StatusContato__c ×&#10;StatusDetalhado__c → Pipeline__c.&#10;38 linhas cadastradas, 18 elegíveis." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="410" y="450" width="280" height="110" as="geometry" />
+        <mxCell id="sf-perfiltab" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=8;" value="PerfilTabulacao__c&#xa;Árvore de decisão do Pipeline (dado externalizado,&#xa;não hardcoded): TipoContato__c × StatusContato__c ×&#xa;StatusDetalhado__c → Pipeline__c.&#xa;38 linhas cadastradas, 18 elegíveis." vertex="1">
+          <mxGeometry height="110" width="280" x="410" y="450" as="geometry" />
         </mxCell>
-        <mxCell id="sf-outros" value="Account (RazaoSocial__c, CNPJ_TEMP__c, CNPJCabeca__c) /&#10;Lead (CNPJ__c) / User (Nome_Perfil__c — filtro de perfil&#10;do tabulador, &quot;TV - Executivo Conquista&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="410" y="575" width="280" height="70" as="geometry" />
+        <mxCell id="sf-outros" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=8;" value="Account (RazaoSocial__c, CNPJ_TEMP__c, CNPJCabeca__c) /&#xa;Lead (CNPJ__c) / User (Nome_Perfil__c — filtro de perfil&#xa;do tabulador, &quot;TV - Executivo Conquista&quot;)" vertex="1">
+          <mxGeometry height="70" width="280" x="410" y="575" as="geometry" />
         </mxCell>
-        <mxCell id="sf-regra33" value="Regra 3.3 (restrição por perfil do tabulador) —&#10;DELIBERADAMENTE NÃO implementada&#10;(campo não confiável na época, ver duvidas-implementacao.md)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=10;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="410" y="655" width="280" height="55" as="geometry" />
+        <mxCell id="sf-regra33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=10;dashed=1;" value="Regra 3.3 (restrição por perfil do tabulador) —&#xa;DELIBERADAMENTE NÃO implementada&#xa;(campo não confiável na época, ver duvidas-implementacao.md)" vertex="1">
+          <mxGeometry height="55" width="280" x="410" y="655" as="geometry" />
         </mxCell>
-
-        <mxCell id="sf-col-fluxo" value="Fluxo de autenticação (resumo)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#2E7D32;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#2E7D32;align=center;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="760" y="80" width="300" height="330" as="geometry" />
+        <mxCell id="sf-col-fluxo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#2E7D32;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#2E7D32;align=center;spacingTop=8;" value="Fluxo de autenticação (resumo)" vertex="1">
+          <mxGeometry height="330" width="300" x="760" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="sf-fluxo1" value="1. LWC dispara HOME_C2_READY / REQUEST_TOKEN" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="790" y="120" width="240" height="40" as="geometry" />
+        <mxCell id="sf-fluxo1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" value="1. LWC dispara HOME_C2_READY / REQUEST_TOKEN" vertex="1">
+          <mxGeometry height="40" width="240" x="790" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="sf-fluxo2" value="2. Controller.obterToken() → Service.getBearerToken()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="790" y="170" width="240" height="40" as="geometry" />
+        <mxCell id="sf-fluxo2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" value="2. Controller.obterToken() → Service.getBearerToken()" vertex="1">
+          <mxGeometry height="40" width="240" x="790" y="170" as="geometry" />
         </mxCell>
-        <mxCell id="sf-fluxo3" value="3. Named Credential → POST /oauth/token (Gateway)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="790" y="220" width="240" height="40" as="geometry" />
+        <mxCell id="sf-fluxo3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" value="3. Named Credential → POST /oauth/token (Gateway)" vertex="1">
+          <mxGeometry height="40" width="240" x="790" y="220" as="geometry" />
         </mxCell>
-        <mxCell id="sf-fluxo4" value="4. Bearer JWT volta pro LWC → postMessage(CONQUISTA_TOKEN)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="790" y="270" width="240" height="50" as="geometry" />
+        <mxCell id="sf-fluxo4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" value="4. Bearer JWT volta pro LWC → postMessage(CONQUISTA_TOKEN)" vertex="1">
+          <mxGeometry height="50" width="240" x="790" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="sf-fluxo5" value="5. home-c2 usa o token nas chamadas ao Gateway&#10;(ver página &quot;Microfrontend&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="790" y="330" width="240" height="50" as="geometry" />
+        <mxCell id="sf-fluxo5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" value="5. home-c2 usa o token nas chamadas ao Gateway&#xa;(ver página &quot;Microfrontend&quot;)" vertex="1">
+          <mxGeometry height="50" width="240" x="790" y="330" as="geometry" />
         </mxCell>
-
-        <mxCell id="sf-e1" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="sf-lwc" target="sf-controller">
+        <mxCell id="sf-e1" edge="1" parent="1" source="sf-lwc" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="sf-controller" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sf-e2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="sf-controller" target="sf-service">
+        <mxCell id="sf-e2" edge="1" parent="1" source="sf-controller" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="sf-service" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sf-e3" value="usa" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;dashed=1;" edge="1" parent="1" source="sf-service" target="sf-nc">
+        <mxCell id="sf-e3" edge="1" parent="1" source="sf-service" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;dashed=1;" target="sf-nc" value="usa">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sf-e4" value="lê" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;dashed=1;" edge="1" parent="1" source="sf-service" target="sf-cmdt">
+        <mxCell id="sf-e4" edge="1" parent="1" source="sf-service" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;dashed=1;" target="sf-cmdt" value="lê">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sf-e5" value="requer" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;dashed=1;" edge="1" parent="1" source="sf-controller" target="sf-permset">
+        <mxCell id="sf-e5" edge="1" parent="1" source="sf-controller" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;dashed=1;" target="sf-permset" value="requer">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sf-e6" value="EventId__c" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;" edge="1" parent="1" source="sf-visita" target="sf-event">
+        <mxCell id="sf-e6" edge="1" parent="1" source="sf-visita" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;" target="sf-event" value="EventId__c">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sf-e7" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="sf-fluxo1" target="sf-fluxo2">
+        <mxCell id="sf-e7" edge="1" parent="1" source="sf-fluxo1" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="sf-fluxo2" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sf-e8" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="sf-fluxo2" target="sf-fluxo3">
+        <mxCell id="sf-e8" edge="1" parent="1" source="sf-fluxo2" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="sf-fluxo3" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sf-e9" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="sf-fluxo3" target="sf-fluxo4">
+        <mxCell id="sf-e9" edge="1" parent="1" source="sf-fluxo3" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="sf-fluxo4" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sf-e10" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="sf-fluxo4" target="sf-fluxo5">
+        <mxCell id="sf-e10" edge="1" parent="1" source="sf-fluxo4" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="sf-fluxo5" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-
-  <!-- ======================================================================
-       PÁGINA 3 — MICROFRONTEND (home-c2)
-  ======================================================================= -->
   <diagram name="Microfrontend (home-c2)" id="pagina-microfrontend">
     <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-
         <mxCell id="mf-title" value="Microfrontend — home-c2 (Angular 18)" style="text;html=1;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="20" y="10" width="600" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mf-subtitle" value="Roda dentro de um &lt;iframe&gt; hospedado pelo LWC homeC2Embed. Nunca fala com Salesforce nem com o backend diretamente — só com o API Gateway." style="text;html=1;fontSize=11;fontStyle=2;align=left;verticalAlign=middle;fontColor=#666666;" vertex="1" parent="1">
           <mxGeometry x="20" y="40" width="900" height="20" as="geometry" />
         </mxCell>
-
         <mxCell id="mf-col-auth" value="Autenticação" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#2E7D32;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#2E7D32;align=center;spacingTop=8;" vertex="1" parent="1">
           <mxGeometry x="20" y="80" width="300" height="330" as="geometry" />
         </mxCell>
-        <mxCell id="mf-auth" value="AuthService&#10;recebe CONQUISTA_TOKEN via postMessage,&#10;guarda token/userId SÓ EM MEMÓRIA (BehaviorSubject)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="mf-auth" value="AuthService&#xa;recebe CONQUISTA_TOKEN via postMessage,&#xa;guarda token/userId SÓ EM MEMÓRIA (BehaviorSubject)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="50" y="120" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mf-renov" value="solicitarNovoToken()&#10;postMessage(REQUEST_TOKEN) — renovação&#10;quando o token expira (~1h)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="mf-renov" value="solicitarNovoToken()&#xa;postMessage(REQUEST_TOKEN) — renovação&#xa;quando o token expira (~1h)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="50" y="195" width="240" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="mf-interceptor" value="auth.interceptor.ts&#10;anexa Authorization: Bearer + x-conquista-*&#10;retry automático em 401/403 (1x)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="mf-interceptor" value="auth.interceptor.ts&#xa;anexa Authorization: Bearer + x-conquista-*&#xa;retry automático em 401/403 (1x)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="50" y="265" width="240" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="mf-origins" value="ALLOWED_ORIGINS&#10;domínio Lightning esperado (My Domain) —&#10;origem não confiável = mensagem descartada" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=10;dashed=1;" vertex="1" parent="1">
+        <mxCell id="mf-origins" value="ALLOWED_ORIGINS&#xa;domínio Lightning esperado (My Domain) —&#xa;origem não confiável = mensagem descartada" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=10;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="50" y="335" width="240" height="55" as="geometry" />
         </mxCell>
-
         <mxCell id="mf-col-servicos" value="Services / Pages" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#2E7D32;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#2E7D32;align=center;spacingTop=8;" vertex="1" parent="1">
           <mxGeometry x="360" y="80" width="320" height="600" as="geometry" />
         </mxCell>
-        <mxCell id="mf-usuario" value="UsuarioApiService&#10;GET /usuario/{codigoUsuario}" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=11;" vertex="1" parent="1">
+        <mxCell id="mf-usuario" value="UsuarioApiService&#xa;GET /usuario/{codigoUsuario}" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="390" y="120" width="260" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="mf-pipeline" value="PipelineApiService&#10;GET /pipeline/em-atraso|hoje|proximos-dias&#10;getItensBrutos() (usado também pela Agenda)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="mf-pipeline" value="PipelineApiService&#xa;GET /pipeline/em-atraso|hoje|proximos-dias&#xa;getItensBrutos() (usado também pela Agenda)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="390" y="180" width="260" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="mf-agenda" value="AgendaApiService&#10;SEM endpoint próprio — reaproveita PipelineApiService&#10;agrupando por data em vez de por etapa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#F9A825;fontSize=10;dashed=1;" vertex="1" parent="1">
+        <mxCell id="mf-agenda" value="AgendaApiService&#xa;SEM endpoint próprio — reaproveita PipelineApiService&#xa;agrupando por data em vez de por etapa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#F9A825;fontSize=10;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="390" y="250" width="260" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="mf-tabulacao" value="TabulacaoApiService&#10;tela de cadastro de tabulação — payload mais rico&#10;do que o backend aceita hoje (POST /visitas, ver BFF)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="mf-tabulacao" value="TabulacaoApiService&#xa;tela de cadastro de tabulação — payload mais rico&#xa;do que o backend aceita hoje (POST /visitas, ver BFF)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="390" y="320" width="260" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="mf-tela00" value="tela-00 (Home)&#10;saudação + Ações Rápidas + Pipeline + Agenda" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=11;" vertex="1" parent="1">
+        <mxCell id="mf-tela00" value="tela-00 (Home)&#xa;saudação + Ações Rápidas + Pipeline + Agenda" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="390" y="390" width="260" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="mf-outraspaginas" value="hello / contas / conta-detalhes / conta-editar&#10;(fora do fluxo C2 principal, dados mock)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;fontSize=10;dashed=1;" vertex="1" parent="1">
+        <mxCell id="mf-outraspaginas" value="hello / contas / conta-detalhes / conta-editar&#xa;(fora do fluxo C2 principal, dados mock)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;fontSize=10;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="390" y="450" width="260" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="mf-testes" value="Testes E2E — Cypress (dados mockados)&#10;cy.intercept nos 4 endpoints + simularHandshakeLwc()&#10;(MessageEvent despachado direto, sem LWC real)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="mf-testes" value="Testes E2E — Cypress (dados mockados)&#xa;cy.intercept nos 4 endpoints + simularHandshakeLwc()&#xa;(MessageEvent despachado direto, sem LWC real)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="390" y="520" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mf-testcases" value="4 specs: saudação · estágios do pipeline ·&#10;troca de filtro · guarda sem handshake" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=9;dashed=1;" vertex="1" parent="1">
+        <mxCell id="mf-testcases" value="4 specs: saudação · estágios do pipeline ·&#xa;troca de filtro · guarda sem handshake" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=9;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="390" y="590" width="260" height="40" as="geometry" />
         </mxCell>
-
         <mxCell id="mf-col-deploy" value="Ambientes / Deploy" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#F9A825;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#F9A825;align=center;spacingTop=8;" vertex="1" parent="1">
           <mxGeometry x="720" y="80" width="320" height="600" as="geometry" />
         </mxCell>
-        <mxCell id="mf-env" value="environment.ts / environment.aws.ts&#10;apiBaseUrl = Gateway hom&#10;environment.prod.ts → home-c2-api (k3s, legado)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="mf-env" value="environment.ts / environment.aws.ts&#xa;apiBaseUrl = Gateway hom&#xa;environment.prod.ts → home-c2-api (k3s, legado)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="750" y="120" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="mf-cicd-aws" value="CI/CD AWS (ci-cd-aws.yml)&#10;build → Cypress (gate) → S3 → invalidação CloudFront" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="mf-cicd-aws" value="CI/CD AWS (ci-cd-aws.yml)&#xa;build → Cypress (gate) → S3 → invalidação CloudFront" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="750" y="195" width="260" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="mf-cloudfront" value="Deploy: S3 (privado, OAC) + CloudFront&#10;d1xao64slevgrt.cloudfront.net" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#0277BD;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="mf-cloudfront" value="Deploy: S3 (privado, OAC) + CloudFront&#xa;d1xao64slevgrt.cloudfront.net" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#0277BD;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="750" y="265" width="260" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="mf-cicd-k3s" value="CI/CD k3s (ci-cd.yml, legado)&#10;home-c2.jesse.tec.br → home-c2-api&#10;NUNCA alvo de mudança do Gateway Conquista" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;fontSize=10;dashed=1;" vertex="1" parent="1">
+        <mxCell id="mf-cicd-k3s" value="CI/CD k3s (ci-cd.yml, legado)&#xa;home-c2.jesse.tec.br → home-c2-api&#xa;NUNCA alvo de mudança do Gateway Conquista" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;fontSize=10;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="750" y="335" width="260" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="mf-cachebug" value="Achado real: SPA não recarrega JS ao trocar&#10;de aba — precisa reload da página inteira&#10;pra pegar um deploy novo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=10;dashed=1;" vertex="1" parent="1">
+        <mxCell id="mf-cachebug" value="Achado real: SPA não recarrega JS ao trocar&#xa;de aba — precisa reload da página inteira&#xa;pra pegar um deploy novo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=10;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="750" y="405" width="260" height="55" as="geometry" />
         </mxCell>
-
         <mxCell id="mf-e1" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="mf-auth" target="mf-renov">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -301,142 +269,132 @@
       </root>
     </mxGraphModel>
   </diagram>
-
-  <!-- ======================================================================
-       PÁGINA 4 — BFF (backend + API Gateway)
-  ======================================================================= -->
   <diagram name="BFF (backend + API Gateway)" id="pagina-bff">
-    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="950" math="0" shadow="0">
+    <mxGraphModel dx="1653" dy="849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="950" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-
-        <mxCell id="bff-title" value="BFF — API Gateway (contrato) + Backend em EKS" style="text;html=1;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="20" y="10" width="700" height="30" as="geometry" />
+        <mxCell id="bff-title" parent="1" style="text;html=1;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;" value="BFF — API Gateway (contrato) + Backend em EKS" vertex="1">
+          <mxGeometry height="30" width="700" x="20" y="10" as="geometry" />
         </mxCell>
-        <mxCell id="bff-subtitle" value="Repos: preparacao-conquista-bff-contract (Gateway) + preparacao-conquista-bff (Spring Boot, EKS)" style="text;html=1;fontSize=11;fontStyle=2;align=left;verticalAlign=middle;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="20" y="40" width="700" height="20" as="geometry" />
+        <mxCell id="bff-subtitle" parent="1" style="text;html=1;fontSize=11;fontStyle=2;align=left;verticalAlign=middle;fontColor=#666666;" value="Repos: preparacao-conquista-bff-contract (Gateway) + preparacao-conquista-bff (Spring Boot, EKS)" vertex="1">
+          <mxGeometry height="20" width="700" x="20" y="40" as="geometry" />
         </mxCell>
-
-        <mxCell id="bff-col-gw" value="AWS API Gateway (preparacao-conquista-bff-contract)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#EF6C00;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#EF6C00;align=center;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="20" y="80" width="340" height="680" as="geometry" />
+        <mxCell id="bff-col-gw" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#EF6C00;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#EF6C00;align=center;spacingTop=8;" value="AWS API Gateway (preparacao-conquista-bff-contract)" vertex="1">
+          <mxGeometry height="680" width="340" x="20" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="bff-token" value="POST /oauth/token&#10;Lambda token-issuer&#10;JWT HS256, client_credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="50" y="120" width="280" height="55" as="geometry" />
+        <mxCell id="bff-token" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=11;" value="POST /oauth/token&#xa;Lambda token-issuer&#xa;JWT HS256, client_credentials" vertex="1">
+          <mxGeometry height="55" width="280" x="50" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="bff-authorizer" value="Lambda Authorizer (REQUEST)&#10;valida JWT + scope&#10;token inválido → 403 · ausente → 401" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="50" y="190" width="280" height="60" as="geometry" />
+        <mxCell id="bff-authorizer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=11;" value="Lambda Authorizer (REQUEST)&#xa;valida JWT + scope&#xa;token inválido → 403 · ausente → 401" vertex="1">
+          <mxGeometry height="60" width="280" x="50" y="190" as="geometry" />
         </mxCell>
-        <mxCell id="bff-perf" value="Achado de performance:&#10;authorizerResultTtlInSeconds hoje = 0 (sem cache) —&#10;recomendação 300s AINDA NÃO aplicada&#10;(esperando token_ttl_seconds voltar a 3600s)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=9;dashed=1;align=left;spacingLeft=8;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
-          <mxGeometry x="50" y="255" width="280" height="60" as="geometry" />
+        <mxCell id="bff-perf" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=9;dashed=1;align=left;spacingLeft=8;verticalAlign=top;spacingTop=6;" value="Achado de performance:&#xa;authorizerResultTtlInSeconds hoje = 0 (sem cache) —&#xa;recomendação 300s AINDA NÃO aplicada&#xa;(esperando token_ttl_seconds voltar a 3600s)" vertex="1">
+          <mxGeometry height="60" width="280" x="50" y="255" as="geometry" />
         </mxCell>
-        <mxCell id="bff-endpoints" value="GET /health (público)&#10;GET /usuario/{codigoUsuario}&#10;GET /grupo-economico?cnpj=&#10;GET /pipeline/em-atraso|hoje|proximos-dias&#10;POST /visitas (Visita__c + Event__c opcional)&#10;— não conectado ao home-c2 ainda, uso manual/futuro" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
-          <mxGeometry x="50" y="325" width="280" height="120" as="geometry" />
+        <mxCell id="bff-endpoints" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=6;" value="GET /health (público)&#xa;GET /usuario/{codigoUsuario}&#xa;GET /grupo-economico?cnpj=&#xa;GET /pipeline/em-atraso|hoje|proximos-dias&#xa;POST /visitas (Visita__c + Event__c opcional)&#xa;— não conectado ao home-c2 ainda, uso manual/futuro" vertex="1">
+          <mxGeometry height="120" width="280" x="50" y="325" as="geometry" />
         </mxCell>
-        <mxCell id="bff-cors" value="CORS: preflight MOCK por operação +&#10;x-amazon-apigateway-gateway-responses&#10;(Access-Control-Allow-Origin nos erros do próprio Gateway)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="50" y="455" width="280" height="55" as="geometry" />
+        <mxCell id="bff-cors" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=10;" value="CORS: preflight MOCK por operação +&#xa;x-amazon-apigateway-gateway-responses&#xa;(Access-Control-Allow-Origin nos erros do próprio Gateway)" vertex="1">
+          <mxGeometry height="55" width="280" x="50" y="455" as="geometry" />
         </mxCell>
-        <mxCell id="bff-validator" value="x-amazon-apigateway-request-validator&#10;valida PRESENÇA de params, não `pattern`&#10;(limitação do próprio API Gateway REST v1)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=10;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="520" width="280" height="55" as="geometry" />
+        <mxCell id="bff-validator" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=10;dashed=1;" value="x-amazon-apigateway-request-validator&#xa;valida PRESENÇA de params, não `pattern`&#xa;(limitação do próprio API Gateway REST v1)" vertex="1">
+          <mxGeometry height="55" width="280" x="50" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="bff-vpclink" value="VPC Link → NLB própria&#10;target_type=instance, NodePort 32089&#10;anexada ao Auto Scaling Group do EKS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="50" y="585" width="280" height="55" as="geometry" />
+        <mxCell id="bff-vpclink" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#EF6C00;fontSize=10;" value="VPC Link → NLB própria&#xa;target_type=instance, NodePort 32089&#xa;anexada ao Auto Scaling Group do EKS" vertex="1">
+          <mxGeometry height="55" width="280" x="50" y="585" as="geometry" />
         </mxCell>
-        <mxCell id="bff-cicd-gw" value="CI/CD (deploy-gateway.yml):&#10;validate-contract (pytest) → bundle OpenAPI →&#10;terraform plan (PR) / apply (push main)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="50" y="650" width="280" height="60" as="geometry" />
+        <mxCell id="bff-cicd-gw" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=10;" value="CI/CD (deploy-gateway.yml):&#xa;validate-contract (pytest) → bundle OpenAPI →&#xa;terraform plan (PR) / apply (push main)" vertex="1">
+          <mxGeometry height="60" width="280" x="50" y="650" as="geometry" />
         </mxCell>
-        <mxCell id="bff-bruno" value="conquista-collections (Bruno)&#10;10 requests, incluindo Visitas - Criar (gera dado real)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#455A64;fontSize=9;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="720" width="280" height="35" as="geometry" />
+        <mxCell id="bff-bruno" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#455A64;fontSize=9;dashed=1;" value="conquista-collections (Bruno)&#xa;10 requests, incluindo Visitas - Criar (gera dado real)" vertex="1">
+          <mxGeometry height="35" width="280" x="50" y="720" as="geometry" />
         </mxCell>
-
-        <mxCell id="bff-col-eks" value="AWS EKS (tagprep-abordagem-eks)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6A1B9A;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#6A1B9A;align=center;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="80" width="340" height="680" as="geometry" />
+        <mxCell id="bff-col-eks" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6A1B9A;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#6A1B9A;align=center;spacingTop=8;" value="AWS EKS (tagprep-abordagem-eks)" vertex="1">
+          <mxGeometry height="680" width="340" x="400" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="bff-svc" value="Service (NodePort 32089)&#10;namespace preparacao-conquista-bff-aws" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="430" y="120" width="280" height="50" as="geometry" />
+        <mxCell id="bff-svc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=11;" value="Service (NodePort 32089)&#xa;namespace preparacao-conquista-bff-aws" vertex="1">
+          <mxGeometry height="50" width="280" x="430" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="bff-pod" value="Pod: preparacao-conquista-bff&#10;Spring Boot 2.7 / Java 21, :9089" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="430" y="185" width="280" height="50" as="geometry" />
+        <mxCell id="bff-pod" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=11;" value="Pod: preparacao-conquista-bff&#xa;Spring Boot 2.7 / Java 21, :9089" vertex="1">
+          <mxGeometry height="50" width="280" x="430" y="185" as="geometry" />
         </mxCell>
-        <mxCell id="bff-controllers" value="Health / Usuario / GrupoEconomico /&#10;PipelineC2 / VisitaController" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="430" y="250" width="280" height="45" as="geometry" />
+        <mxCell id="bff-controllers" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=10;" value="Health / Usuario / GrupoEconomico /&#xa;PipelineC2 / VisitaController" vertex="1">
+          <mxGeometry height="45" width="280" x="430" y="250" as="geometry" />
         </mxCell>
-        <mxCell id="bff-usecase" value="PipelineC2UseCase&#10;fetchByFiltro + buildUltimaEtapaMap EM PARALELO&#10;(CompletableFuture, executor dedicado 16 threads)&#10;— ganho real medido: ~1,0s → ~0,8s" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
-          <mxGeometry x="430" y="305" width="280" height="75" as="geometry" />
+        <mxCell id="bff-usecase" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=6;" value="PipelineC2UseCase&#xa;fetchByFiltro + buildUltimaEtapaMap EM PARALELO&#xa;(CompletableFuture, executor dedicado 16 threads)&#xa;— ganho real medido: ~1,0s → ~0,8s" vertex="1">
+          <mxGeometry height="75" width="280" x="430" y="305" as="geometry" />
         </mxCell>
-        <mxCell id="bff-visitauc" value="CriarVisitaUseCase → SalesforceVisitaRepository&#10;cria Event__c (se houver retorno agendado)&#10;depois Visita__c vinculada via EventId__c" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="430" y="390" width="280" height="55" as="geometry" />
+        <mxCell id="bff-visitauc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=10;" value="CriarVisitaUseCase → SalesforceVisitaRepository&#xa;cria Event__c (se houver retorno agendado)&#xa;depois Visita__c vinculada via EventId__c" vertex="1">
+          <mxGeometry height="55" width="280" x="430" y="390" as="geometry" />
         </mxCell>
-        <mxCell id="bff-sfclient" value="SalesforceClient&#10;query() (SOQL) + insert() (REST) —&#10;login TV2-STS cacheado (accessToken/tokenExpiry)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="430" y="455" width="280" height="55" as="geometry" />
+        <mxCell id="bff-sfclient" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=10;" value="SalesforceClient&#xa;query() (SOQL) + insert() (REST) —&#xa;login TV2-STS cacheado (accessToken/tokenExpiry)" vertex="1">
+          <mxGeometry height="55" width="280" x="430" y="455" as="geometry" />
         </mxCell>
-        <mxCell id="bff-perfiltabrepo" value="SalesforcePerfilTabulacaoRepository&#10;cache em memória, TTL 15min (configurável)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="430" y="520" width="280" height="50" as="geometry" />
+        <mxCell id="bff-perfiltabrepo" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=10;" value="SalesforcePerfilTabulacaoRepository&#xa;cache em memória, TTL 15min (configurável)" vertex="1">
+          <mxGeometry height="50" width="280" x="430" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="bff-cicd-app" value="CI/CD (ci-cd-aws.yml):&#10;build → ECR (tag=sha, IMMUTABLE) → kubectl apply/EKS →&#10;testes de integração (JUnit5+RestAssured+Failsafe,&#10;API real, 16/16 passando)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
-          <mxGeometry x="430" y="585" width="280" height="80" as="geometry" />
+        <mxCell id="bff-cicd-app" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontSize=10;align=left;spacingLeft=8;verticalAlign=top;spacingTop=6;" value="CI/CD (ci-cd-aws.yml):&#xa;build → ECR (tag=sha, IMMUTABLE) → kubectl apply/EKS →&#xa;testes de integração (JUnit5+RestAssured+Failsafe,&#xa;API real, 16/16 passando)" vertex="1">
+          <mxGeometry height="80" width="280" x="430" y="585" as="geometry" />
         </mxCell>
-        <mxCell id="bff-testint" value="tests/test-integration&#10;módulo Maven próprio, sem Cucumber" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#455A64;fontSize=9;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="430" y="675" width="280" height="35" as="geometry" />
+        <mxCell id="bff-testint" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#455A64;fontSize=9;dashed=1;" value="tests/test-integration&#xa;módulo Maven próprio, sem Cucumber" vertex="1">
+          <mxGeometry height="35" width="280" x="430" y="675" as="geometry" />
         </mxCell>
-        <mxCell id="bff-backup" value="Branch de backup: bkp/pre-performance-2026-09-13&#10;(estado do main antes das mudanças de performance)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#455A64;fontSize=9;dashed=1;" vertex="1" parent="1">
-          <mxGeometry x="430" y="720" width="280" height="35" as="geometry" />
+        <mxCell id="bff-backup" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECEFF1;strokeColor=#455A64;fontSize=9;dashed=1;" value="Branch de backup: bkp/pre-performance-2026-09-13&#xa;(estado do main antes das mudanças de performance)" vertex="1">
+          <mxGeometry height="35" width="280" x="430" y="720" as="geometry" />
         </mxCell>
-
-        <mxCell id="bff-col-secrets" value="AWS Secrets Manager" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#C62828;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#C62828;align=center;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="780" y="80" width="340" height="230" as="geometry" />
+        <mxCell id="bff-col-secrets" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#C62828;verticalAlign=top;fontSize=14;fontStyle=1;fontColor=#C62828;align=center;spacingTop=8;" value="AWS Secrets Manager" vertex="1">
+          <mxGeometry height="230" width="340" x="780" y="80" as="geometry" />
         </mxCell>
-        <mxCell id="bff-secret1" value="tv-b1189-secret-us-east-1-hom&#10;TV2-STS — compartilhado com home-c2-api" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="810" y="120" width="280" height="50" as="geometry" />
+        <mxCell id="bff-secret1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=10;" value="tv-b1189-secret-us-east-1-hom&#xa;TV2-STS — compartilhado com home-c2-api" vertex="1">
+          <mxGeometry height="50" width="280" x="810" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="bff-secret2" value="preparacao-conquista-bff-oauth-clients&#10;client_id/client_secret por consumidor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="810" y="180" width="280" height="50" as="geometry" />
+        <mxCell id="bff-secret2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=10;" value="preparacao-conquista-bff-oauth-clients&#xa;client_id/client_secret por consumidor" vertex="1">
+          <mxGeometry height="50" width="280" x="810" y="180" as="geometry" />
         </mxCell>
-        <mxCell id="bff-secret3" value="preparacao-conquista-bff-jwt-signing-key&#10;chave simétrica HS256 (token-issuer + authorizer)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="810" y="240" width="280" height="50" as="geometry" />
+        <mxCell id="bff-secret3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontSize=10;" value="preparacao-conquista-bff-jwt-signing-key&#xa;chave simétrica HS256 (token-issuer + authorizer)" vertex="1">
+          <mxGeometry height="50" width="280" x="810" y="240" as="geometry" />
         </mxCell>
-
-        <mxCell id="bff-e1" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="bff-authorizer" target="bff-endpoints">
+        <mxCell id="bff-e1" edge="1" parent="1" source="bff-authorizer" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="bff-endpoints" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bff-e2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="bff-endpoints" target="bff-vpclink">
+        <mxCell id="bff-e2" edge="1" parent="1" source="bff-endpoints" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="bff-vpclink" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bff-e3" value="http_proxy" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;strokeColor=#6A1B9A;" edge="1" parent="1" source="bff-vpclink" target="bff-svc">
+        <mxCell id="bff-e3" edge="1" parent="1" source="bff-vpclink" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;strokeColor=#6A1B9A;" target="bff-svc" value="http_proxy">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bff-e4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="bff-svc" target="bff-pod">
+        <mxCell id="bff-e4" edge="1" parent="1" source="bff-svc" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="bff-pod" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bff-e5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="bff-pod" target="bff-controllers">
+        <mxCell id="bff-e5" edge="1" parent="1" source="bff-pod" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="bff-controllers" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bff-e6" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="bff-controllers" target="bff-usecase">
+        <mxCell id="bff-e6" edge="1" parent="1" source="bff-controllers" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="bff-usecase" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bff-e7" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="bff-controllers" target="bff-visitauc">
+        <mxCell id="bff-e7" edge="1" parent="1" source="bff-controllers" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="bff-visitauc" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bff-e8" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="bff-usecase" target="bff-sfclient">
+        <mxCell id="bff-e8" edge="1" parent="1" source="bff-usecase" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="bff-sfclient" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bff-e9" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="bff-visitauc" target="bff-sfclient">
+        <mxCell id="bff-e9" edge="1" parent="1" source="bff-visitauc" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="bff-sfclient" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bff-e10" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="bff-usecase" target="bff-perfiltabrepo">
+        <mxCell id="bff-e10" edge="1" parent="1" source="bff-usecase" style="edgeStyle=orthogonalEdgeStyle;html=1;" target="bff-perfiltabrepo" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bff-e11" value="Bearer TV2-STS&#10;(cadeia de auth independente)" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;strokeColor=#1565C0;" edge="1" parent="1" source="bff-sfclient" target="bff-secret1">
+        <mxCell id="bff-e11" edge="1" parent="1" source="bff-sfclient" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;strokeColor=#1565C0;" target="bff-secret1" value="Bearer TV2-STS&#xa;(cadeia de auth independente)">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bff-e12" value="secret" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;dashed=1;strokeColor=#C62828;" edge="1" parent="1" source="bff-authorizer" target="bff-secret3">
+        <mxCell id="bff-e12" edge="1" parent="1" source="bff-authorizer" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;dashed=1;strokeColor=#C62828;" target="bff-secret3" value="secret">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bff-e13" value="secret" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;dashed=1;strokeColor=#C62828;" edge="1" parent="1" source="bff-token" target="bff-secret2">
+        <mxCell id="bff-e13" edge="1" parent="1" source="bff-token" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=9;dashed=1;strokeColor=#C62828;" target="bff-secret2" value="secret">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-
 </mxfile>
